@@ -2,15 +2,28 @@
 @import '../node_modules/jenkins-core-theme/less/images';
 @import '../node_modules/jenkins-core-theme/less/codemirror';
 @import 'variables';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
+@import 'images';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400, 700);
 
 // Only match the same elements which are also present in Jenkins' style.css
-body, table, form, input, td, th, p, textarea, select {
+body,
+table,
+form,
+input,
+td,
+th,
+p,
+textarea,
+select {
   font-family: @font-primary, sans-serif;
 }
 
-body, table, form, td, th, p {
+body,
+table,
+form,
+td,
+th,
+p {
   color: @color-text !important;
   font-size: 14px !important;
 }
@@ -20,7 +33,10 @@ body {
   background-color: @color-bg;
 }
 
-a, a:hover, a:visited, a:link {
+a,
+a:hover,
+a:visited,
+a:link {
   text-decoration: none !important;
   color: @color-link;
   &:hover {
@@ -30,15 +46,15 @@ a, a:hover, a:visited, a:link {
 }
 
 h2 {
-    margin-bottom: 0px;
-    margin-top: 2em;
-    font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 2em;
+  font-weight: normal;
 }
 
 h3 {
-    color: #c9851d;
-    font-size: 3em;
-    font-weight: normal;
+  color: #c9851d;
+  font-size: 3em;
+  font-weight: normal;
 }
 
 #header {
@@ -50,7 +66,7 @@ h3 {
   padding: 3px;
   //Custom logo - path here
   //background: url('logo.png') no-repeat, @color-primary;
-  //background-size: auto 45px, cover; 
+  //background-size: auto 45px, cover;
 
   .login {
     top: inherit;
@@ -95,7 +111,7 @@ h3 {
 }
 
 #breadcrumbs li:hover,
-A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
+a.breadcrumbBarAnchor.mouseIsOverMenuSelector {
   background-color: transparent !important;
 }
 
@@ -108,7 +124,7 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
   float: right;
 }
 
-#notification-bar{
+#notification-bar {
   height: 50px !important;
 }
 
@@ -121,29 +137,32 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
 
 .pane-frame {
   border: 0;
-  
-  &:hover, &.mouseover {
+
+  &:hover,
+  &.mouseover {
     border: 0 !important;
   }
 
- .pane-header, .pane-footer {
-  background: @color-bg;
-  margin-bottom: 5px;
-  border-radius: 0;
-  border: 0;
- }
+  .pane-header,
+  .pane-footer {
+    background: @color-bg;
+    margin-bottom: 5px;
+    border-radius: 0;
+    border: 0;
+  }
 
- .pane-header {
-  border-bottom: 2px solid @color-accent-light;
- }
+  .pane-header {
+    border-bottom: 2px solid @color-accent-light;
+  }
 
- .single-line:hover, .single-line.model-link-active {
-  background: @color-accent-light !important;
- }
+  .single-line:hover,
+  .single-line.model-link-active {
+    background: @color-accent-light !important;
+  }
 }
 
 .bigtable {
-  th  {
+  th {
     border-bottom: 2px solid @color-accent-light;
     background-color: transparent;
   }
@@ -163,7 +182,7 @@ table.stripped-odd tr:nth-child(odd) {
     }
     a {
       padding: 5px 10px;
-      border-radius: 0; 
+      border-radius: 0;
     }
   }
 }
@@ -206,7 +225,7 @@ footer {
 #management-links {
   padding-left: 0 !important;
   a {
-    margin-right: 10px; 
+    margin-right: 10px;
     font-weight: 600;
   }
   tr {
@@ -227,7 +246,7 @@ th.pane {
 }
 
 .bottom-sticker-edge {
-  display: none
+  display: none;
 }
 
 .bottom-sticker-inner {
@@ -260,14 +279,14 @@ table.progress-bar {
 }
 
 td {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .ygtvlabel,
 .ygtvlabel:link,
 .ygtvlabel:visited,
 .ygtvlabel:hover {
-  background-color: transparent !important
+  background-color: transparent !important;
 }
 
 .yuimenuitemlabel {
@@ -275,15 +294,15 @@ td {
 }
 
 #main-panel-content > div:nth-child(2) {
-  background-color: transparent !important
+  background-color: transparent !important;
 }
 
 #jenkins .yui-button {
   button {
     text-decoration: none;
     text-align: center;
-    letter-spacing: .5px;
-    transition: .1s ease-out;
+    letter-spacing: 0.5px;
+    transition: 0.1s ease-out;
     cursor: pointer;
     border: none !important;
     border-radius: 3px;
@@ -313,7 +332,8 @@ td {
   vertical-align: middle;
 }
 
-.console-output, .console-output * {
+.console-output,
+.console-output * {
   position: relative;
   font-family: @font-console, monospace !important;
   background: @console-black;
@@ -336,29 +356,30 @@ td {
   }
 }
 
-.ace_editor, .ace_editor * {
-  font-family:  @font-console, monospace !important;
+.ace_editor,
+.ace_editor * {
+  font-family: @font-console, monospace !important;
 }
 
 .jenkins_ver:after {
   margin-left: 15px;
-  content: 'neo2-theme @@version'
+  content: 'neo2-theme @@version';
 }
 
-[style^="color:gray"] {
+[style^='color:gray'] {
   color: @color-grey !important;
 }
 
-[style^="color:red"] {
+[style^='color:red'] {
   color: @color-red !important;
 }
 
 // make headings on the config pages easier to read
 .section-header {
-    font-size: 2em;
-    border-bottom: none !important;
-    font-weight: lighter !important;
-    margin-bottom: 0.2em;
-    margin-top: 1.5em !important;
-    padding-bottom: 3px;
+  font-size: 2em;
+  border-bottom: none !important;
+  font-weight: lighter !important;
+  margin-bottom: 0.2em;
+  margin-top: 1.5em !important;
+  padding-bottom: 3px;
 }
